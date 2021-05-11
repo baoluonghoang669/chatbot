@@ -1,0 +1,121 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hi there", "hello", "haroo", "yaw", "wassup", "hi", "hey", "holla", "hello"],
+            "responses": ["Hello thanks for checking in",
+                "Hi there, how can i help you ?"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "good bye", "see you later", "no thanks, bye", "no thanks, good bye"],
+            "responses": ["Have a nice time, welcome back again"],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "okay", "Thank you", "thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great", "That's so greate"],
+            "responses": ["Thanks for your compliment", "Happy to help", "You're welcome", "It's my pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
+        },
+        {
+            "tag": "name1",
+            "patterns": ["what's your name?", "who are you?"],
+            "responses": ["I'm just a chat agent. I only exist in the internet", "I'm a architecture chat agent"],
+            "context": [""]
+        },
+        {
+            "tag": "oke",
+            "patterns": ["oke", "okey", "nice", "great"],
+            "responses": ["Do you need any help?"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["my name is ", "I'm ", "I am"],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}."],
+            "context": [""]
+        },
+        {
+            "tag": "contact",
+            "patterns": ["Can you give me some advices about your product?", "I like it"],
+            "responses": ["Well. Can you give me your telephone number? I'll contact you to give some advices after a few minutes."],
+            "context": [""]
+        },
+        {
+            "tag": "telephone",
+            "patterns": ["Right, My telephone number is ", "Right, it's "],
+            "responses": ["Okey. Please pay attention to your phone."],
+            "context": [""]
+        },
+        {
+            "tag": "goodday",
+            "patterns": ["Have a good day", "Have a nice day"],
+            "responses": ["Well, you too", "Have a good day too"],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+            "context": [""]
+        },
+        {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you", "I want you", "I want"],
+            "responses": ["Yes I'm here to assist you"],
+            "context": [""]
+        },
+        {
+            "tag": "who",
+            "patterns": ["Who are you?"],
+            "responses": [" I am just an artificial intelligence chat agent about architecture field."],
+            "context": [""]
+        },
+        {
+            "tag": "bot1",
+            "patterns": ["Are you a bot"],
+            "responses": ["Yes. I work and all my operations are based on the internet servers."],
+            "context": [""]
+        },
+        {
+            "tag": "address",
+            "patterns": ["What is your company's address?", "What is your company's location?", "your company's address", "What street does your company locate?", "What is your company's address?", "your company's location", "your company's street", "street", "address"],
+            "responses": ["My company's address is located at 55/11 Ngu Hanh Son Street, Da Nang City",
+                "Here's my address link :https://www.google.com/maps/place/k55,+11+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+M%E1%BB%B9+An,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.052955,108.2350313,17z/data=!3m1!4b1!4m5!3m4!1s0x314219d7dc514d97:0xa8d71291f45e6850!8m2!3d16.052955!4d108.23722?hl=vi", "You can find out address link at here: :https://www.google.com/maps/place/k55,+11+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+M%E1%BB%B9+An,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.052955,108.2350313,17z/data=!3m1!4b1!4m5!3m4!1s0x314219d7dc514d97:0xa8d71291f45e6850!8m2!3d16.052955!4d108.23722?hl=vi"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "company",
+            "patterns": ["what fields your company operate?", "what products your company buy", "what architecture samples your company design ?"],
+            "responses": ["Our company operate about fields such as interior and house design. You can see design samples of our company at here :https://www.facebook.com/TROC-Studio-111045133645249"],
+            "context": [""]
+        },
+        {
+            "tag": "cost",
+            "patterns": ["How much does product cost?", "product cost", "cost"],
+            "responses": ["You can reference product cost at here :https://www.facebook.com/TROC-Studio-111045133645249"],
+            "context": [""]
+        },
+        {
+            "tag": "find_sample",
+            "patterns": ["I want to find "],
+            "responses": ["You can see our {n} at here :https://www.facebook.com/TROC-Studio-111045133645249"],
+            "context": [""]
+        },
+        {
+            "tag": "name_product",
+            "patterns": ["how about "],
+            "responses": ["Here's our {n} :https://www.facebook.com/TROC-Studio-111045133645249"],
+            "context": [""]
+        }
+    ]
+}
