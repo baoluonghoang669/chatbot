@@ -46,7 +46,7 @@
         {
             "tag": "contact",
             "patterns": ["Can you give me some advices about your product?", "I like it"],
-            "responses": ["Well. Can you give me your telephone number? I'll contact you to give some advices after a few minutes."],
+            "responses": ["Well. Can you give me your telephone number? I'll contact you to give some advices about this product."],
             "context": [""]
         },
         {
@@ -106,7 +106,7 @@
             "context": [""]
         },
         {
-            "tag": "find_sample",
+            "tag": "name_sample",
             "patterns": ["I want to find "],
             "responses": ["You can see our {n} at here :https://www.facebook.com/TROC-Studio-111045133645249"],
             "context": [""]
