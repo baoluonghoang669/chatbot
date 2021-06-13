@@ -36,18 +36,18 @@ def chatbot_response():
         ints = predict_class(msg, model)
         res1 = getResponse(ints, intents)
         res = res1.replace("{n}",name)
-    elif msg.startswith('hi my name is'):
-        name = msg[14:]
-        ints = predict_class(msg, model)
-        res1 = getResponse(ints, intents)
-        res = res1.replace("{n}",name)
     elif msg.startswith('how about'):
         name = msg[10:]
         ints = predict_class(msg, model)
         res1 = getResponse(ints, intents)
         res = res1.replace("{n}",name)
-    elif msg.startswith('I want to find'):
-        name = msg[15:]
+    elif msg.startswith('I want to buy'):
+        name = msg[14:]
+        ints = predict_class(msg, model)
+        res1 = getResponse(ints, intents)
+        res = res1.replace("{n}",name)
+    elif msg.startswith('find'):
+        name = msg[5:]
         ints = predict_class(msg, model)
         res1 = getResponse(ints, intents)
         res = res1.replace("{n}",name)

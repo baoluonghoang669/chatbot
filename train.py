@@ -42,7 +42,7 @@ for intent in intents["intents"]:
 
 # lemmatizer
 # chúng ta sẽ bổ sung từng từ và loại bỏ các từ trùng lặp khỏi danh sách. Lemmatizing là quá trình chuyển đổi một từ thành dạng bổ đề (lemma) của nó và sau đó tạo một tệp nhỏ để lưu trữ các đối tượng Python mà chúng ta sẽ sử dụng trong khi dự đoán (predict).
-# Sau đó, chúng ta lưu lại 2 file pickle là “words.pkl” và “classes.pkl”.
+# Sau đó, chúng ta lưu lại 2 file pickle là "words.pkl" và "classes.pkl".
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
 words = sorted(list(set(words)))
 
@@ -93,7 +93,7 @@ print("Training data created")
 # Create model - 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons
 # equal to number of intents to predict output intent with softmax
 
-# Sau khi có được bộ training set, chúng ta sẽ thực hiện xây dựng 1 mạng neural với 3 layers bằng cách sử dụng Keras sequential API.Tầng đầu tiên 128 neurons, tầng thứ hai 64 neurons và lớp đầu ra thứ 3 chứa số lượng tế bào thần kinh. Sau khi training mô hình với 200 epochs, mô hình đã đạt độ chính xác lên đến 100%. Tiếp theo chúng ta sẽ lưu mô hình dưới dạng ‘chatbot_model.h5’.
+# Sau khi có được bộ training set, chúng ta sẽ thực hiện xây dựng 1 mạng neural với 3 layers bằng cách sử dụng Keras sequential API. Tầng đầu tiên 128 neurons, tầng thứ hai 64 neurons và lớp đầu ra thứ 3 chứa số lượng tế bào thần kinh. Sau khi training mô hình với 200 epochs, mô hình đã đạt độ chính xác lên đến 100%. Tiếp theo chúng ta sẽ lưu mô hình dưới dạng ‘chatbot_model.h5’.
 model = Sequential()
 model.add(Dense(128, input_shape=(len(train_x[0]),), activation="relu"))
 model.add(Dropout(0.5))
@@ -111,7 +111,7 @@ model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy
 # based on either accuracy or loos monitoring. If the loss is being monitored, training comes to halt when there is an
 # increment observed in loss values. Or, If accuracy is being monitored, training comes to halt when there is decrement observed in accuracy values.
 # translate here:
-# Chọn một số lượng tối ưu cho việc training các Epochs để tránh việc sử dụng hoàn toàn hoặc quá mức một việc dừng sớm gọi về Keras
+# Chọn một số lượng tối ưu cho việc dào tạo các Epochs để tránh việc sử dụng hoàn toàn hoặc quá mức một cuộc gọi dừng sớm cho về Keras
 # Dựa trên độ theo dõi chính xác hoặc lỏng lẻo. Nếu mất mát đang được theo dõi, training dừng lại khi có 1
 # gia tăng quan sát trong các giá trị mất mát. Hoặc, nếu độ chính xác đang được theo dõi, training dừng lại khi có sự suy giảm quan sát thấy trong các giá trị độ chính xác.
 

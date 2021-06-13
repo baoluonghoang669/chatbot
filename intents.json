@@ -45,7 +45,7 @@
         },
         {
             "tag": "contact",
-            "patterns": ["Can you give me some advices about your product?", "I like it"],
+            "patterns": ["Can you give me some advices about your product?", "I like it", "i like this one"],
             "responses": ["Well. Can you give me your telephone number? I'll contact you to give some advices about this product."],
             "context": [""]
         },
@@ -95,7 +95,7 @@
         },
         {
             "tag": "company",
-            "patterns": ["what fields your company operate?", "what products your company buy", "what architecture samples your company design ?"],
+            "patterns": ["what fields your company operate?", "what products your company buy", "what architecture samples your company design ?", "can i see your samples ?", "your samples", "your houses", "your interior"],
             "responses": ["Our company operate about fields such as interior and house design. You can see design samples of our company at here :https://www.facebook.com/TROC-Studio-111045133645249"],
             "context": [""]
         },
@@ -107,8 +107,8 @@
         },
         {
             "tag": "name_sample",
-            "patterns": ["I want to find "],
-            "responses": ["You can see our {n} at here :https://www.facebook.com/TROC-Studio-111045133645249"],
+            "patterns": ["I want to buy ", "find "],
+            "responses": ["You can see our samples at here :https://www.facebook.com/TROC-Studio-111045133645249"],
             "context": [""]
         },
         {
