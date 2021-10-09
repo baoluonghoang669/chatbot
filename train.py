@@ -90,8 +90,7 @@ train_y = list(training[:, 1])
 print("Training data created")
 
 # actual training
-# Create model - 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons
-# equal to number of intents to predict output intent with softmax
+# Create model - 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons equal to number of intents to predict output intent with softmax
 
 # Sau khi có được bộ training set, chúng ta sẽ thực hiện xây dựng 1 mạng neural với 3 layers bằng cách sử dụng Keras sequential API. Tầng đầu tiên 128 neurons, tầng thứ hai 64 neurons và lớp đầu ra thứ 3 chứa số lượng tế bào thần kinh. Sau khi training mô hình với 200 epochs, mô hình đã đạt độ chính xác lên đến 100%. Tiếp theo chúng ta sẽ lưu mô hình dưới dạng ‘chatbot_model.h5’.
 model = Sequential()
@@ -103,17 +102,17 @@ model.add(Dense(len(train_y[0]), activation="softmax"))
 model.summary()
 
 # Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
-# độ dốc tăng tốc Nesterov mang lại kết quả tốt cho mô hình
 sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
 # for choosing an optimal number of training epochs to avoid underfitting or overfitting use an early stopping callback to keras
 # based on either accuracy or loos monitoring. If the loss is being monitored, training comes to halt when there is an
 # increment observed in loss values. Or, If accuracy is being monitored, training comes to halt when there is decrement observed in accuracy values.
-# translate here:
-# Chọn một số lượng tối ưu cho việc dào tạo các Epochs để tránh việc sử dụng hoàn toàn hoặc quá mức một cuộc gọi dừng sớm cho về Keras
-# Dựa trên độ theo dõi chính xác hoặc lỏng lẻo. Nếu mất mát đang được theo dõi, training dừng lại khi có 1
-# gia tăng quan sát trong các giá trị mất mát. Hoặc, nếu độ chính xác đang được theo dõi, training dừng lại khi có sự suy giảm quan sát thấy trong các giá trị độ chính xác.
+
+#It is the primary hardware of the computer that executes the instruction for computer programs.
+#CPU runs the operating system, continually receiving inputs and providing output to the users.
+#GPU stands for Graphical Processing Unit, and it is integrated into each CPU in some form.
+#Tensor Processing Unit (TPU) is an application-specific integrated circuit, to accelerate the AI calculations and algorithm.
 
 # from keras import callbacks
 # earlystopping = callbacks.EarlyStopping(monitor ="loss", mode ="min", patience = 5, restore_best_weights = True)
