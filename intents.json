@@ -9,7 +9,7 @@
         },
         {
             "tag": "goodbye",
-            "patterns": ["bye", "good bye", "see you later", "no thanks, bye", "no thanks, good bye"],
+            "patterns": ["bye", "good bye", "see you later", "no thanks, bye", "no thanks, good bye", "no"],
             "responses": ["Have a nice time, welcome back again"],
             "context": [""]
         },
@@ -40,7 +40,7 @@
         {
             "tag": "name",
             "patterns": ["my name is ", "I'm ", "I am"],
-            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}."],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}"],
             "context": [""]
         },
         {
@@ -95,7 +95,7 @@
         },
         {
             "tag": "company",
-            "patterns": ["what fields your company operate?", "what products your company buy", "what architecture samples your company design ?", "can i see your samples ?", "your samples", "your houses", "your interior"],
+            "patterns": ["fields", "samples", "houses", "interior"],
             "responses": ["Our company operate about fields such as interior and house design. You can see design samples of our company at here :https://www.facebook.com/TROC-Studio-111045133645249"],
             "context": [""]
         },
